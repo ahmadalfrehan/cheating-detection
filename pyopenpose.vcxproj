@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E25992B-6295-35D7-A380-8380C6F08380}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>pyopenpose</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\openpose\build\python\openpose\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pyopenpose.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pyopenpose.cp39-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\openpose\build\python\openpose\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pyopenpose.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pyopenpose.cp39-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\openpose\include;C:\openpose\3rdparty\windows\opencv\include;C:\openpose\3rdparty\windows\caffe\include;C:\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;C:\openpose\3rdparty\windows\caffe3rdparty\include;C:\Users\DELL\anaconda3\include;C:\openpose\3rdparty\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>NDEBUG;USE_CAFFE;USE_CUDA;CMAKE_INTDIR="Release";pyopenpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalUsingDirectories></AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;USE_CAFFE;USE_CUDA;CMAKE_INTDIR=\"Release\";pyopenpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\openpose\include;C:\openpose\3rdparty\windows\opencv\include;C:\openpose\3rdparty\windows\caffe\include;C:\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;C:\openpose\3rdparty\windows\caffe3rdparty\include;C:\Users\DELL\anaconda3\include;C:\openpose\3rdparty\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\openpose\include;C:\openpose\3rdparty\windows\opencv\include;C:\openpose\3rdparty\windows\caffe\include;C:\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;C:\openpose\3rdparty\windows\caffe3rdparty\include;C:\Users\DELL\anaconda3\include;C:\openpose\3rdparty\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\src\openpose\Release\openpose.lib;..\..\..\3rdparty\windows\opencv\x64\vc15\lib\opencv_world450.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\gflags.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\glog.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto-d.lib;..\..\..\3rdparty\windows\caffe\lib\caffe.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\boost_system-vc142-mt-x64-1_74.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\boost_filesystem-vc142-mt-x64-1_74.lib;C:\Users\DELL\anaconda3\libs\python39.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64\cudart_static.lib;..\..\..\3rdparty\windows\opencv\x64\vc15\lib\opencv_world450.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\gflags.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\glog.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto-d.lib;..\..\..\3rdparty\windows\caffe\lib\caffe.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\boost_system-vc142-mt-x64-1_74.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\boost_filesystem-vc142-mt-x64-1_74.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/openpose/build/python/openpose/Release/pyopenpose.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>C:/openpose/build/python/openpose/Release/pyopenpose.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\openpose\include;C:\openpose\3rdparty\windows\opencv\include;C:\openpose\3rdparty\windows\caffe\include;C:\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;C:\openpose\3rdparty\windows\caffe3rdparty\include;C:\Users\DELL\anaconda3\include;C:\openpose\3rdparty\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>USE_CAFFE;USE_CUDA;CMAKE_INTDIR="Debug";pyopenpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalUsingDirectories></AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;USE_CAFFE;USE_CUDA;CMAKE_INTDIR=\"Debug\";pyopenpose_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\openpose\include;C:\openpose\3rdparty\windows\opencv\include;C:\openpose\3rdparty\windows\caffe\include;C:\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;C:\openpose\3rdparty\windows\caffe3rdparty\include;C:\Users\DELL\anaconda3\include;C:\openpose\3rdparty\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\openpose\include;C:\openpose\3rdparty\windows\opencv\include;C:\openpose\3rdparty\windows\caffe\include;C:\openpose\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;C:\openpose\3rdparty\windows\caffe3rdparty\include;C:\Users\DELL\anaconda3\include;C:\openpose\3rdparty\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\src\openpose\Debug\openposed.lib;..\..\..\3rdparty\windows\opencv\x64\vc15\lib\opencv_world450d.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\gflagsd.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\glogd.lib;..\..\..\3rdparty\windows\caffe\lib\caffe-d.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto-d.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\boost_system-vc142-mt-x64-1_74.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\boost_filesystem-vc142-mt-x64-1_74.lib;C:\Users\DELL\anaconda3\libs\python39.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64\cudart_static.lib;..\..\..\3rdparty\windows\opencv\x64\vc15\lib\opencv_world450d.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\gflagsd.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\glogd.lib;..\..\..\3rdparty\windows\caffe\lib\caffe-d.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto-d.lib;..\..\..\3rdparty\windows\caffe\lib\caffeproto.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\boost_system-vc142-mt-x64-1_74.lib;..\..\..\3rdparty\windows\caffe3rdparty\lib\boost_filesystem-vc142-mt-x64-1_74.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/openpose/build/python/openpose/Debug/pyopenpose.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/openpose/build/python/openpose/Debug/pyopenpose.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\openpose\python\openpose\openpose_python.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\openpose\build\src\openpose\openpose.vcxproj">
+      <Project>{4760F10E-409E-3551-B39F-850A19D421B7}</Project>
+      <Name>openpose</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,28 @@
+# Ignore a single file
+secret.txt
+caffe-d.dll
+caffe.dll
+caffehdf5_D.dll
+cublas64_11.dll
+cublasLt64_11.dll
+curand64_10.dll
+libopenblas.dll
+opencv_videoio_ffmpeg450_64.dll
+opencv_world450.dll
+opencv_world450d.dll
+yolov8n.pt
+# Ignore all .log files
+*.log
+
+# Ignore a folder and its contents
+/node_modules/
+/models/
+/docs/
+# Ignore build or output folders
+/build/
+/dist/
+/models/
+/docs/
+# Ignore system files
+.DS_Store
+Thumbs.db
