@@ -24,4 +24,6 @@ It allows an examiner to:
 
 ---
 
-## 📂 Project Structure
+## 📂 Demo
+You can find demo screenshots and a sample video inside the demo/
+ folder.
